@@ -4,37 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <title>Auto MEX</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <ul>
-        <li>
-          <a href="./index.html">Inicio</a>
-        </li>
-        <li>
-          <a id="link" href="./quienes_somos.html">¿Quienes somos?</a>
-        </li>
-        <li>
-          <a href="./comprar.html">Comprar</a>
-        </li>
-        <li>
-          <a href="./contacto.html">Contacto</a>
-        </li>
-      </ul>
-      <div>
-        <img
-          src="./imagenes/logoTemporal.png"
-          alt="logConstructora"
-          width="450px"
-        />
+      <div class="nav container">
+        <i class="bx bx-menu"></i>
+        <i class="bx bxs-car"><span class="logo"> Auto</span> Mex</i>
+        <ul class="navbar">
+          <li><a href="./index.html" class="active">Inicio</a></li>
+          <li><a href="./comprar.html">Reseñas</a></li>
+          <li><a href="./quienes_somos.html">Nosotros</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+        <i class="bx bx-search-alt" id="search-icon">
+          <div class="search-box container">
+            <input
+              type="search"
+              name=""
+              id=""
+              placeholder="Buscar aqui."
+            /></div
+        ></i>
+        <i class="bx bx-cart-add"></i>
       </div>
     </header>
     <main class="main">
-      <section class="section__title" id="tituloIndex">
-        <h1>BIENVENIDO AL EMPRESA AUTO MEX</h1>
-        <h1>¿QUIENES SOMOS?</h1>
+      <section class="home">
+        <div class="home-text">
+          <h1 class="cambio">BIENVENIDO AL EMPRESA AUTO MEX</h1>
+          <h1>
+            El auto que necesitas <br />al alcance <span>de tus manos</span>
+          </h1>
+          <p>
+            Los mejores autos que encontraras en mexico y <br />
+            en el mundo a solo un click <br />
+            de donde quiera que estes <br />
+            simplemente escoje y compra y es tuyo
+          </p>
+        </div>
       </section>
       <section>
         <div>
@@ -92,91 +110,14 @@
         <img src="./imagenes/logoW.png" alt="whatsapp" width="50px" />
       </aside>
 
-      <aside>
-        <div class="home-text">
-          <h2 class="ubicacion">Menu</h2>
-          <h3 class>Tacos del día</h3>
-          <nav class="col3">
-            <ul>
-              <li>Chorizo................. $15</li>
-              <li>Canasta................. $10</li>
-              <li>Barbacoa................ $15</li>
-              <li>Campechanos............. $15</li>
-              <li>Carne asada............. $15</li>
-              <li>Mañaneros................. $15</li>
-            </ul>
-          </nav>
-
-          <div class="home-text">
-            <h3>Grandes</h3>
-            <nav class="col3">
-              <ul>
-                <li>Flor de jamaica..........$30</li>
-                <li>Arrachera................$30</li>
-                <li>Barbacoa.................$30</li>
-                <li>Árabes...................$30</li>
-                <li>Longaniza................$30</li>
-                <li>Pescado..................$30</li>
-              </ul>
-            </nav>
-          </div>
-          <h3 class="container">Tacos Especiales</h3>
-          <nav class="col3">
-            <dl>
-              <dt>Machitos................$45</dt>
-              <dd>-Combinación de vísceras de cabrito</dd>
-              <dt>Obispo..................$45</dt>
-              <dd>-Su base es carne de cerdo.</dd>
-              <dt>Marlin..................$45</dt>
-              <dd>-Combinación de mariscos</dd>
-              <dt>Pastor Aleman...........$45</dt>
-              <dd>-Tortilla de arina con carne de res y queso</dd>
-              <dt>Pug.....................$45</dt>
-              <dd>- Tortilla de maiz con chuleta y salsa especial</dd>
-            </dl>
-          </nav>
+      <section>
+        <div class="grid_container">
+          <div class="item1">audi</div>
+          <div class="item1">for</div>
+          <div class="item1">mazda</div>
+          <div class="item1">nizzan</div>
         </div>
-        <section>
-          <table class="ubicacion">
-            <tr>
-              <th>Nombre</th>
-              <th>Ubicación</th>
-              <th>Horarios</th>
-            </tr>
-
-            <tr>
-              <td>Centro</td>
-              <td>
-                <a href="https://goo.gl/maps/3x4TS8JEBmLhMYMu9" target="_blank"
-                  >C. Fray Pedro de Gante 2, Centro, 56100 Texcoco, Méx.</a
-                >
-              </td>
-              <td>L -D <br />24 horas</td>
-            </tr>
-
-            <tr>
-              <td>Sur</td>
-              <td>
-                <a href="https://goo.gl/maps/1KihiRcMH4oLBgPF8" target="_blank"
-                  >La Magdalena Huizachitla, 55715 San Francisco Coacalco,
-                  Méx.</a
-                >
-              </td>
-              <td>L-D <br />6am-8pm</td>
-            </tr>
-
-            <tr>
-              <td>Norte</td>
-              <td>
-                <a href="https://goo.gl/maps/FpgoEVmhGr9cGrgz5" target="_blank"
-                  >Jardines de Morelos, 55070 Ecatepec de Morelos, Méx.</a
-                >
-              </td>
-              <td>M-D<br />6am-8pm</td>
-            </tr>
-          </table>
-        </section>
-      </aside>
+      </section>
     </main>
     <footer class="footerIndex">
       <p>Auto Mex --- Todos los derechos reservados</p>

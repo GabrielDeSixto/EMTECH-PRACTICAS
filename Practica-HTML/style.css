@@ -1,19 +1,14 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-    --header-height: 3.5rem;
-  
+    
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: 'Exo', sans-serif;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --main-color:#d90429;
+    --text-color: #020102;
+    --bg-color: #ffff;
   
     /*========== Font weight ==========*/
     --font-medium: 500;
@@ -29,75 +24,198 @@
   
   /*=============== Selectores directos ===============*/
   * {
-    box-sizing: border-box;
-    padding: 0;
+    font-family: 'Poppins',sans-serif;
     margin: 0;
-  }
-  
-  html {
+    padding: 0;
+    scroll-padding-top: 1rem;
     scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
-  }
-  
-  h1, h2, h3 {
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
-  }
-  
-  ul {
     list-style: none;
-  }
-  
-  a {
     text-decoration: none;
   }
   
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 
-/*=============== Selectores con clases ===============*/
+.section{
+  padding: 4rem 0 2rem;
+} 
 
-.container {
-    max-width: 1024px;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-  }
+img{
+  width: 100%;
+}
+
+body{
+  color: var(--text-color)
+}
+.container{
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header{
+  display: block;
+  width: 100%;
+  position:sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 35px;
+
+}
+#menu-icon{
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-color);
+  display: none;
+}
+
+.logo{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color:var(--text-color) ;
+}
+.logo span{
+  color:var(--main-color);
+}
+
+
+.navbar{
+  display: flex;
+  column-gap: 2rem;
+}
+
+.navbar a{
+  color: var(--text-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+
+}
+
+.navbar a:hover, .navbar .active{
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+
+}
+#search-icon{
+  font-size: 24px;
+  cursor: pointer;
+}
+.search-box{  position: absolute;
+  top: 110%;
+  right: 0;
+  left: 0;
+  background: var(--bg-color);
+  box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+  border: 1px solid var(--main-color);
+  border-bottom: 0.5rem;
+ 
+}
+
+.search-box .active{
+  clip-path: circle(144% at 100% 0%);
+}
+.search-box input{
+  width: 100%;
+  padding: 20px;
   
-  .grid {
-    display: grid;
-    gap: 1.5rem;
-  }
+  background: transparent;
+
+}
+
+.home{
+  max-width: 1300px;
+  margin:auto;
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  background: url(./imagenes/Background-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+}
+
+.home-text{
+  padding-left: 130px;
+  text-align: justify;
+}
+
+.home-text h1{
+  font-size: 2.4rem;
+}
+
+.home-text span{
+  color: var(--main-color);
+}
+
+.home-text p{
+  font-size: 0.938rem;
+  font-weight: 300;
+  margin: 0.5rem  0 1.2rem;
+}
+
+.homeformulario{
+  max-width: 1300px;
+  margin:auto;
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+}
+
+.btn {
+  color: white;
+  background-color: blue;
+
+}
+
+.btn:hover{
+  color: #ffff;
+  background-color: red;
+}
+
+
+.cambio:hover{
+  color: white;
+  background-color: aqua;
+}
+
+.grid_container{
+  border: 5px solid orange;
+  background-color: red;
+  display: grid;
+  grid-template-areas:
+   item1;
+  gap: 5px;
+  padding: 10px;
+}
+
+
+.item1{
+  grid-area: item1;
+  background: url(./imagenes/car1.jpg);
   
-  .section {
-    padding: 4.5rem 0 2rem;
-  }
+}
+.item2{
+  grid-area: item2;
+  background: url(./imagenes/car2.jpg);
+}
+.item3{
+  grid-area: item3;
+  background: url(./imagenes/car3.jpg);
   
-  .section__title {
-    font-size: var(--h2-font-size);
-    text-align: center;
-    margin-bottom: 2.5rem;
-    background-color:var(--colorTitle);
-
-  }
+}
+.item4{
+  grid-area: item4;
+  background: url(./imagenes/car4.jpg);
   
-  .main {
-    overflow: hidden;
-  }
+}
 
-  /*=============== Selectores con id ===============*/
-
-  #imgPuebla{
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 70%;
-
-  }

@@ -4,40 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Comprar</title>
+    <title>Reseñas</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div>
-        <img src="./imagenes/logoTemporal.png" alt="Logo_ChefG" width="150px" />
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="./quienes_somos.html">¿Quienes somos?</a>
-          </li>
-          <li>
-            <a href="./comprar.html">Comprar</a>
-          </li>
-          <li>
-            <a href="./contacto.html">Contacto</a>
-          </li>
+      <div class="nav container">
+        <i class="bx bx-menu"></i>
+        <i class="bx bxs-car"><span> Auto</span> Mex</i>
+        <ul class="navbar">
+          <li><a href="./index.html" class="active">Inicio</a></li>
+          <li><a href="./comprar.html">Reseñas</a></li>
+          <li><a href="./quienes_somos.html">Nosotros</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
         </ul>
-      </nav>
+        <i class="bx bx-search-alt" id="search-icon">
+          <div class="search-box container">
+            <input
+              type="search"
+              name=""
+              id=""
+              placeholder="Buscar aqui."
+            /></div
+        ></i>
+      </div>
     </header>
-    <section>
-      <h1>¿Como comprar?</h1>
-      <ol>
-        <li>Seleccionar los productos</li>
-        <li>Mandarlos al carrito</li>
-        <li>Comprar!</li>
-      </ol>
-    </section>
-    <section>
-      <img src="./imagenes/compras.jpg" alt="Compras" width="450px" />
+    <section class="home">
+      <div class="home-text">
+        <h1>Reseña Dodge</h1>
+        <p>
+          Dodge Journey 2022 Reseña - Una segunda generación inesperada El
+          estilo en general es musculoso y se muestra más trabajado que lo que
+          encontrábamos en la Journey anterior. Detrás quedó el diseño sencillo
+          de un vehículo funcional y ahora nos presenta una SUV con actitud que
+          está dispuesta a competir en un segmento muy peleado.
+        </p>
+      </div>
     </section>
   </body>
 </html>
