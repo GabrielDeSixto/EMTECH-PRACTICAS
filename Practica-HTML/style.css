@@ -188,34 +188,29 @@ header{
   background-color: aqua;
 }
 
-.grid_container{
-  border: 5px solid orange;
-  background-color: red;
-  display: grid;
-  grid-template-areas:
-   item1;
-  gap: 5px;
-  padding: 10px;
+.container-img{
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
+   
 }
 
-
-.item1{
-  grid-area: item1;
-  background: url(./imagenes/car1.jpg);
-  
-}
-.item2{
-  grid-area: item2;
-  background: url(./imagenes/car2.jpg);
-}
-.item3{
-  grid-area: item3;
-  background: url(./imagenes/car3.jpg);
-  
-}
-.item4{
-  grid-area: item4;
-  background: url(./imagenes/car4.jpg);
-  
+.container-img .box-img figure{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+.container-img .box-img:nth-child(1){
+  grid-column-start: span 2;
+
+}
+
+.container-img .box-img:nth-child(4){
+  grid-row-start: span 2;
+}
