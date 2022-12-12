@@ -1,0 +1,12 @@
+@import "./variables.scss";
+
+header{
+    background-color:$backgroudcolor;
+    font-family: $TipografiaPrincipal; 
+}
+
+
+p{
+    @extend header;
+}
+
